@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+body{
+    background: rgb(255, 255, 255);
+  font-family: 'Exo 2', sans-serif;
+}
+
+.container{
+  width: 1900px;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+header{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.head{
+    display: flex;
+    margin-top: 30px;
+}
+
+.header-nav{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 30px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.top{
+    justify-content: flex-end;
+}
+
+.bottom{
+    li{
+        a{
+            font-weight: 700;
+            font-size: 14px;
+            color: #000;
+        }
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+.register-new-client{
+    color: #0092d1;
+    i{
+        width: 13px;
+        height: 16px;
+        background: url('/img/icon-account.png')  no-repeat;
+        display: inline-block;
+    }
+}
+
+.personal-account{
+    color: #0092d1;
+    i{
+        width: 13px;
+        height: 16px;
+        background: url('/img/icon-account2.png')  no-repeat;
+        display: inline-block;
+        margin-right: 4px;
+    }
+}
+
+.tel{
+    font-size: 20px;
+    font-weight: 500;
+    span{
+        color: #0092d1;
+    }
+}
+
+
+.SMS{
+    position: relative;
+    margin-top: 30px;
+    img{
+        width: 100%;
+    }
+    .SMS-text{
+        position: absolute;
+        width: 776px;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .SMS-title{
+            font-weight: 500;
+            font-size: 40px;
+            color: #fff;
+        }
+        .SMS-date{
+            color:#fff ;
+            padding-top: 30px;
+        }
+    }
+}
+
+main{
+    width: 776px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.social-text{
+    p{
+        margin-left: 10px;
+        color: rgb(141, 141, 141);
+        opacity: 0.5;
+        font-weight: 700;
+    }
+}
+
+.social-link{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    ul{
+        list-style-type: none;
+
+       li{
+            background-image: url('/img/clock.png');
+            background-repeat: no-repeat;
+            padding-left: 30px;
+            background-size: 20px 20px; ;
+            background-position: 0 50%;
+        }
+    }
+}
+
+.social-img{
+    display: flex;
+    gap: 5px;
+    a{
+        img{
+            width: 30px;
+            height: 30px;
+        }
+        
+    }
+    p{
+        margin-right: 10px;
+    }
+    
+}
+
+.about{
+    margin-top: 100px;
+    h1{
+        margin-bottom: 86px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 400;
+
+    }
+}
+
+.about-img{
+    position: relative;
+    .about-text{
+        position: absolute;
+        top: 23%;
+        left: 5%;
+        p{
+            font-size: 18px;
+            font-weight: 400;
+            color: #fff;
+            span{
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+.how-work{
+    text-align: center;
+    margin-top: 68.5px;
+    h1{
+        color: rgb(22, 26, 28);
+        font-size: 29px;
+        font-weight: 700;
+        line-height: 35px;
+   
+        
+    }
+}
+
+.gide{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3 1fr 0.5fr 1fr);
+    gap: 20px;
+    align-items: center;
+    margin-top: 47px;
+    position: relative;
+    z-index: 1;
+    .gide-line{
+        position: absolute;
+        top: 86%;
+        width: 100%;
+        height: 0px;
+        border: 1px solid rgb(220, 220, 220);
+        z-index: -1;
+    }
+    img{
+        width: 100%;
+    }
+    img:nth-child(5),
+    img:nth-child(6),
+    img:nth-child(7),
+    img:nth-child(8){
+        width: 82px;
+        height: 82px;
+        margin: 0 auto;
+    }
+}
+
+.gide-text{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: start;
+    margin-top: 18px;
+    p{
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 23px;
+        color: #000
+    p{
+        font-size: 15px;
+    }
+}
+}
+
+.advantages{
+    margin: 91.5px 0 121.7px 0;
+    h1{
+        font-size: 24px;
+        font-weight: 700;
+        color: rgb(0, 146, 209);
+        text-align: center;
+    }
+}
+
+.advantages-card-items{
+    display: grid;
+    grid-template-columns: repeat(3, 245px);
+    grid-template-rows: repeat(2, 235px);
+    gap: 20.5px;
+    margin-top: 40px;
+}
+
+.advantages-card{
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 4px;
+    display: grid;
+    grid-template-rows: 78.3px 1fr 1fr;
+
+    .advantages-card-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 27px;
+        margin-left: 20px;
+        width: 200px;
+        height: 24px;
+        p{
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19px;
+        }
+        img{
+
+            width: 24.4px;
+            height: 23.8px;
+        }
+    }
+
+    .advantages-card-text{
+        margin-left: 20px;
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            
+        }
+    }
+
+    .advantages-card-img{
+        position: relative;
+        img{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+.eco{
+    h1{
+        text-align: center;
+        color: rgb(22, 26, 28);
+        font-size: 29px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 33px;
+    }
+}
+
+.eco-img{
+    margin-bottom: 56px;
+}
+
+.eco-text{
+    margin: 0 auto;
+    text-align: center;
+    padding: 17.8px 0;
+    width: 495px;
+    border-radius: 4px;
+    background: rgb(1, 146, 209);
+    p{
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        span{
+            font-weight: 700;
+        }
+    }
+}
+
+
+.useful{
+    margin: 110px 0 54px 0;
+    h1{
+        text-align: center;
+        color: rgb(22, 26, 28);
+        font-size: 29px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+.useful-item{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 1.5fr);
+    gap: 20px;
+    margin-top: 61px;
+    p{
+        color: rgb(1, 146, 209);
+        font-size: 16px;
+        font-weight: 700;
+
+    }
+    ul{
+        list-style-type: none;
+        
+        li{
+           list-style-image: url('/img/usefulitem.png');
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+    }
+}
+
+
+.connect{
+    background-image: url('/img/connectImg.png') ;
+    h1{
+        padding-top: 50px;
+        color: rgb(255, 255, 255);
+        font-size: 29px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+.connect-steps{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 60px;
+    margin: 80px 35px;
+    padding-bottom: 45px;
+}
+
+.connect-step{
+    z-index: 2;
+    position: relative;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    width: 217px;
+    height: 108px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: -40px;
+        left: 10px;
+    }
+    p{
+        margin-left: 20px;
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+.connect-step:nth-child(4),
+.connect-step:nth-child(5),
+.connect-step:nth-child(6){
+    height: 141px;
+    display: block;
+    p{
+        margin-top: 15px;
+    }
+}
+
+.connect-line1{
+    position: absolute;
+    width: 698.15px;
+    height: 0;
+    left: 44px;
+    top: -11px;
+    border: 1px dashed rgb(212, 212, 212);
+    z-index: 1;
+}
+
+.connect-line2{
+    position: absolute;
+    width: 561.75px;
+    height: 0;
+    left: -33px;
+    top: 190px;
+    border: 1px dashed rgb(212, 212, 212);
+}
+
+
